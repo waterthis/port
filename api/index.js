@@ -1,4 +1,4 @@
-const { startVercel } =  require('../src/bot');
+const { startVercel } =  require('../src');
 
 export default async function handle(req, res) {
   try {
