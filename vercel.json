@@ -1,9 +1,11 @@
 {
-    "functions": {
-      "api/index.js": {
-        "memory": 1024,
-        "maxDuration": 10
-      }
+  "version": 2,
+  "public": true,
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "api/index.ts"
     }
-  }
-  
+  ],
+  "redirects": [{ "source": "/", "destination": "/api", "permanent": false }]
+}
